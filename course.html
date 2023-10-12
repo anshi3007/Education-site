@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar::before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .navbar {
+            position: relative;
+            display: flex;
+        }
+
+        .navbar li {
+            display: inline-block;
+            list-style: none;
+            margin-left: 100px;
+        }
+
+        .navbar li a {
+            color: rgb(6, 130, 130);
+            padding: 30px 50px;
+            margin: 0px 0px;
+            text-decoration: none;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: 2px solid rgb(3, 142, 152) underline;
+            cursor: pointer;
+        }
+
+        .edu::before {
+            position: absolute;
+            content: "";
+            background-repeat: no-repeat;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRek34qTA0dPNCxGaTODF1BF3Za-R34m4HzA&usqp=CAU');
+            background-size: cover;
+            height: 70%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        .edu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin: 150px;
+        }
+
+        .text {
+            color: rgb(35, 36, 41);
+            font-size: 3rem;
+        }
+
+        #sec {
+            display: flex;
+            /* border: 2px solid black; */
+        }
+
+        .mid {
+            background-color: rgb(250, 234, 218);
+            /* border: 2px solid black; */
+            text-align: center;
+            margin: -70px 40px;
+            width: 500px;
+            padding: 20px 30px;
+        }
+
+        .crs {
+            font-size: 40px;
+            text-align: center;
+            margin: -160px -33px;
+            padding: 200px;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        .mid:hover {
+            box-shadow: 3px 3px 5px 5px rgb(194, 183, 183);
+        }
+
+        .para {
+            color: rgb(111, 117, 118);
+            font-size: 20px;
+        }
+
+        #about {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+
+        #src {
+            /* border: 2px solid black; */
+            display: flex;
+            padding: -10px 20px;
+        }
+
+        #src img {
+            margin: 20px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <img class="image"
+                        src="https://w7.pngwing.com/pngs/643/465/png-transparent-graduation-ceremony-education-school-square-academic-cap-student-education-logo-purple-angle-furniture-thumbnail.png"
+                        height=40px width="50px">
+                </li>
+                <li>
+                    <h1 id="msg">EDUtech</h1>
+                </li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="#">COURSE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <section class="edu">
+            <h1 class="text">OUR COURSES</h1>
+        </section>
+    </div>
+    <h1 class="crs">COURSES WE OFFER<br>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, magni.</p>
+    </h1>
+
+    <section id="sec">
+        <div class="mid">
+            <h3>INTERMEDIATE</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nulla natus qui in dolores, cumque,
+                itaque odit consequatur ullam saepe omnis mollitia sed provident culpa inventore, dolorum ad facilis
+                magni?</p>
+        </div>
+        <div class="mid">
+            <h3>DEGREE</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto architecto pariatur numquam a sequi
+                aliquam quidem minima vitae non molestias in, ducimus amet ea reiciendis sunt esse, labore, tempore
+                enim.</p>
+        </div>
+        <div class="mid">
+            <h3>POST GRADUATION</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia alias repellat et cum placeat
+                doloremque nemo. Eaque blanditiis magni id suscipit dicta, voluptatem sapiente nisi totam soluta aperiam
+                eius consequatur!</p>
+        </div>
+        </section>
+        <section id="about">
+            <h3>ABOUT US</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium similique corrupti quibusdam
+                pariatur,
+                ullam
+                delectus voluptatem voluptas natus excepturi officiis necessitatibus architecto, nam, nesciunt commodi
+                ipsam
+                rerum rem! Laborum, harum.
+            </p>
+            <div id="src">
+                <img src="https://www.pngkit.com/png/detail/196-1967191_facebook-logo-png-image-facebook-logo-vector-png.png"
+                    width=20px height="20px">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" width=20px height="25px">
+                <img src="https://www.unipile.com/wp-content/uploads/2022/09/Logo-Instagram-noir-1.png" width=20px
+                    height="20px">
+                <img src="https://www.pinclipart.com/picdir/middle/575-5753617_logo-icon-linkedin-svg-clipart.png"
+                    width=20px height="20px">
+            </div>
+            <p>mode with &#9829; by edutech </p>
+        </section>
+</body>
+
+</html>

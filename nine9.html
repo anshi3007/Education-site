@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="media1.css">
+    <style>
+        .navbar::before {
+            /* background-color: brown; */
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .navbar {
+            position: relative;
+            display: flex;
+        }
+
+        .navbar li {
+            display: inline-block;
+            list-style: none;
+            margin-left: 100px;
+        }
+
+        .navbar li a {
+            color: rgb(6, 130, 130);
+            /* position: fixed; */
+            padding: 30px 50px;
+            margin: 0px 0px;
+            text-decoration: none;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: 2px solid rgb(3, 142, 152) underline;
+            cursor: pointer;
+        }
+
+        .edu::before {
+            position: absolute;
+            content: "";
+            /* background-image: url('https://cdn.britannica.com/08/187508-050-D6FB5173/Shanghai-Tower-Gensler-San-Francisco-world-Oriental-2015.jpg'); */
+            background-image: url('https://media4.giphy.com/headers/floridastateuniversity/PMljzGfLQafv.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        .edu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin: 150px;
+        }
+
+        .text {
+            color: rgb(198, 135, 54);
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .btn {
+            border: 2px solid rgb(173, 48, 69);
+            border-radius: 10px;
+            width: 200px;
+            height: 35px;
+            margin: 30px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: brown;
+            transition: 2s;
+        }
+
+        #msg {
+            font-size: 20px;
+        }
+
+        .image img {
+            padding: 60px 70px;
+            margin: 120px 180px;
+        }
+
+        #sec {
+            display: flex;
+            /* border: 2px solid black; */
+        }
+
+        .mid {
+            background-color: rgb(250, 234, 218);
+            /* border: 2px solid black; */
+            text-align: center;
+            margin: -70px 40px;
+            width: 500px;
+            padding: 20px 30px;
+        }
+
+        .crs {
+            font-size: 40px;
+            text-align: center;
+            margin: -92px -33px;
+            padding: 200px;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        .mid:hover {
+            box-shadow: 3px 3px 5px 5px rgb(194, 183, 183);
+        }
+
+        .first {
+            text-align: center;
+            padding: 100px;
+            font-size: 40px;
+        }
+
+        .para {
+            color: rgb(111, 117, 118)
+        }
+
+        .buil {
+            display: flex;
+            display: inline-block;
+            margin: -80px 20px;
+            padding: 40px 40px;
+            /* border:2px solid black; */
+            border-radius: 10px;
+        }
+
+        .faci {
+            display: flex;
+            display: inline-block;
+            margin: -80px 20px;
+            padding: 40px 40px;
+            /* border:2px solid black; */
+            border-radius: 10px;
+        }
+
+        #campus {
+            align-items: center;
+            display: flex;
+            margin: -35px -38px;
+            padding: 10px;
+        }
+
+        #facilities {
+            align-items: center;
+            margin: 20px 40px;
+            display: flex;
+            margin-left: -65px;
+        }
+
+        /* #globe img:hover{
+                color: brown;
+        } */
+        .fac {
+            text-align: center;
+            padding: 100px;
+            font-size: 40px;
+        }
+
+        #globe:hover {
+            background-color: aquamarine;
+        }
+
+        h2 {
+            color: brown;
+        }
+
+        #rev {
+            display: flex;
+        }
+
+        .review {
+            border: 2px solid pink;
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(253, 246, 246);
+            /* text-align: center; */
+            margin: -80px 80px;
+            width: 500px;
+            padding: 40px 102px;
+            box-shadow: -4px -7px rgba(97, 138, 140, 0.4);
+        }
+
+        .logo {
+            margin: 50px 60px;
+        }
+
+        span {
+            size: 50px;
+        }
+
+        #contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin: 150px;
+        }
+
+        .bton {
+            border: 3px solid rgb(246, 233, 235);
+            color: rgb(38, 26, 26);
+            /* font-weight: bold; */
+            font-size: 18px;
+            border-radius: 10px;
+            width: 200px;
+            height: 35px;
+            /* margin: 120px; */
+            cursor: pointer;
+            align-items: center;
+            background-color: transparent;
+        }
+
+        .bton:hover {
+            background-color: brown;
+            transition: 2s;
+        }
+
+        .cros {
+            font-size: 50px;
+            text-align: center;
+            margin: -60px -33px;
+            padding: 121px 40px;
+            text-align: center;
+            color: rgb(228, 204, 204);
+            text-shadow: -2px -3px rgb(32, 30, 31);
+        }
+
+        .foot {
+            /* border:2px solid white; */
+            padding: 30px 40px;
+            margin: 100px 70px;
+        }
+
+        .edut {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            /* background-image: url('https://img.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg');
+            background-repeat: no-repeat; */
+        }
+
+        .foot {
+            background-image: url('https://img.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 87%;
+        }
+
+        #about {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        #src {
+            /* border: 2px solid black; */
+            display: flex;
+            padding: -10px 20px;
+        }
+
+        #src img {
+            margin: 20px 20px;
+        }
+
+        #globe img:hover {
+            color: blue;
+        }
+        @media screen and (max-width:600px){
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <img class="image"
+                        src="https://w7.pngwing.com/pngs/643/465/png-transparent-graduation-ceremony-education-school-square-academic-cap-student-education-logo-purple-angle-furniture-thumbnail.png"
+                        height=40px width="50px">
+                </li>
+                <li>
+                    <h1 id="msg">EDUtech</h1>
+                </li>
+                <li><a href="#" target="_blank">HOME</a></li>
+                <li><a href="about.html" target="_blank">ABOUT</a></li>
+                <li><a href="course.html" target="_blank">COURSE</a></li>
+                <li><a href="contact.html" target="_blank">CONTACT</a></li>
+            </ul>
+        </nav>
+        <section class="edu">
+            <h1 class="text">WORLD'S BIGGEST UNIVERSITY</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laborum aut, maiores nostrum quos dolorum
+                et
+                repudiandae ea voluptatum nisi, doloribus qui, libero dolores. Cumque dolores tempore laudantium aliquam
+                minima!</p>
+            <button class="btn">VISIT US TO KNOW MORE</button>
+        </section>
+    </div>
+    <h1 class="crs">COURSES WE OFFER<br>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, magni.</p>
+    </h1>
+
+    <section id="sec">
+        <div class="mid">
+            <h3>INTERMEDIATE</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nulla natus qui in dolores, cumque,
+                itaque odit consequatur ullam saepe omnis mollitia sed provident culpa inventore, dolorum ad facilis
+                magni?</p>
+        </div>
+        <div class="mid">
+            <h3>DEGREE</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto architecto pariatur numquam a sequi
+                aliquam quidem minima vitae non molestias in, ducimus amet ea reiciendis sunt esse, labore, tempore
+                enim.</p>
+        </div>
+        <div class="mid">
+            <h3>POST GRADUATION</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia alias repellat et cum placeat
+                doloremque nemo. Eaque blanditiis magni id suscipit dicta, voluptatem sapiente nisi totam soluta aperiam
+                eius consequatur!</p>
+        </div>
+    </section>
+    <h1 class="first">OUR GLOBAL CAMPUS<br>
+        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, quibusdam!</p>
+    </h1>
+
+    <section id="campus">
+
+        <div class="buil">
+            <img id="globe"
+                src="https://iea.imgix.net/baf1e3a9-a015-4917-8206-021234e74453/matthew-hamilton-Ru3Ap8TNcsk-unsplash.jpg?auto=compress%2Cformat&fit=min&q=80&rect=1710%2C0%2C3648%2C3648p"
+                height=600px width="400px">
+        </div>
+        <div class="buil">
+            <img id="globe1"
+                src="https://img.freepik.com/premium-photo/modern-beautiful-new-buildings-colored-wall-blue-sky_158388-1047.jpg?w=2000"
+                height=600px width="400px">
+        </div>
+        <div class="buil">
+            <img id="globe2" src="https://roadmap2050.report/static/files/photo-building.jpg" height=600px
+                width="400px">
+        </div>
+    </section>
+
+    <h1 class="fac">OUR FACLITIES<br>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, unde?</p>
+    </h1>
+    <section id="facilities">
+        <div class="faci">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/NYC_-_New_York_City_Library_-_1723.jpg"
+                height=400px width="400px">
+            <h2>LIBRARY</h2>
+        </div>
+        <div class="faci">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Defense.gov_photo_essay_120112-D-VO565-015.jpg"
+                height=400px width="400px">
+            <h2>GAMES</h2>
+        </div>
+        <div class="faci">
+            <img src="https://ied.eu/wp-content/uploads/2019/04/roll-playing-games.jpg" height=400px width="400px">
+            <h2>ROLE PLAY</h2>
+        </div>
+    </section>
+    <h1 class="first">WHAT OUR STUDENT SAYS<br>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, unde?</p>
+    </h1>
+    <section id="rev">
+        <div class="review">
+            <img class="logo" src="https://www.kindpng.com/picc/m/155-1550391_faces-in-circle-png-transparent-png.png"
+                width=80px height="100px">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit tenetur deleniti doloribus blanditiis
+                eligendi quisquam temporibus ex corrupti esse illo libero facilis excepturi cum fugiat voluptate, ipsa
+                rem enim quod.</p>
+            <div>&#9734;</div>
+        </div>
+        <div class="review">
+            <img class="logo"
+                src="https://www.pngitem.com/pimgs/m/75-758282_walter-circle-person-photo-in-circle-hd-png.png"
+                width=80px height="100px">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit tenetur deleniti doloribus
+                blanditiis
+                eligendi quisquam temporibus ex corrupti esse illo libero facilis excepturi cum fugiat
+                voluptate, ipsa
+                rem enim quod.</p>
+            <div>&#9734;</div>
+        </div>
+    </section>
+
+    <section class="edut">
+        <footer class="foot">
+            <h1 class="cros">ENROLL FOR OUR VARIOUS ONLINE COURSES<br>ANYWHERE FROM THE WORLD</h1>
+            <button class="bton">CONTACT US</button>
+        </footer>
+    </section>
+    <section id="about">
+        <h3>ABOUT US</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium similique corrupti quibusdam pariatur,
+            ullam
+            delectus voluptatem voluptas natus excepturi officiis necessitatibus architecto, nam, nesciunt commodi ipsam
+            rerum rem! Laborum, harum.
+        </p>
+        <div id="src">
+            <img src="https://www.pngkit.com/png/detail/196-1967191_facebook-logo-png-image-facebook-logo-vector-png.png"
+                width=20px height="20px">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" width=20px height="25px">
+            <img src="https://www.unipile.com/wp-content/uploads/2022/09/Logo-Instagram-noir-1.png" width=20px
+                height="20px">
+            <img src="https://www.pinclipart.com/picdir/middle/575-5753617_logo-icon-linkedin-svg-clipart.png"
+                width=20px height="20px">
+        </div>
+        <p>mode with &#9829; by edutech </p>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar::before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        .navbar {
+            position: relative;
+            display: flex;
+        }
+
+        .navbar li {
+            display: inline-block;
+            list-style: none;
+            margin-left: 100px;
+        }
+
+        .navbar li a {
+            color: rgb(6, 130, 130);
+            padding: 30px 50px;
+            margin: 0px 0px;
+            text-decoration: none;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: 2px solid rgb(3, 142, 152) underline;
+            cursor: pointer;
+        }
+
+        .edu::before {
+            position: absolute;
+            content: "";
+            /* background-image: url('https://cdn.britannica.com/08/187508-050-D6FB5173/Shanghai-Tower-Gensler-San-Francisco-world-Oriental-2015.jpg'); */
+            /* background-image: url('https://media4.giphy.com/headers/floridastateuniversity/PMljzGfLQafv.gif'); */
+            background-image: url('https://www.shutterstock.com/image-photo/wood-block-symbol-telephone-mail-260nw-698841982.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 70%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        .edu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin: 150px 50px;
+        }
+
+        .text {
+            color: rgb(35, 36, 41);
+            font-size: 3rem;
+        }
+
+        #id img {
+            /* padding: 80px 125px; */
+            margin: 100px 40px;
+        }
+
+        .info {
+            /* border: 2px solid black; */
+            margin: 5px;
+            display: flex;
+            margin: 60px 70px;
+        }
+
+        .msg img {
+            width: 50px;
+            margin: 20px 20px;
+            padding: 70px 80px;
+        }
+
+        .mail {
+            margin: 7px 10px;
+        }
+
+        .form {
+            width:100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #frm {
+            float: right;
+        }
+
+        #form {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 30px;
+            width: 100%;
+            margin: 30px -30px;
+            align-items: center;
+            justify-content: center;
+            background-image: url('https://www.digitalplatforms.co.za/wp-content/uploads/2015/11/Website-Design-Background.jpg');
+        }
+
+        #two {
+            text-shadow: 0px -2px white;
+        }
+
+        input {
+            border-radius: 10px;
+            padding: 10px 100px;
+        }
+
+        textarea {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px 100px;
+        }
+
+        .bton {
+            border: cornsilk;
+            box-shadow: 4px 4px 4px rgb(239, 232, 234);
+            color: antiquewhite;
+            background-color: brown;
+            border-radius: 10px;
+            margin: 10px 10px;
+            padding: 10px 164px;
+        }
+
+        #formi {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 30px;
+            margin: 10px -30px;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <img class="image"
+                        src="https://w7.pngwing.com/pngs/643/465/png-transparent-graduation-ceremony-education-school-square-academic-cap-student-education-logo-purple-angle-furniture-thumbnail.png"
+                        height=40px width="50px">
+                </li>
+                <li>
+                    <h1 id="msg">EDUtech</h1>
+                </li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <section class="edu">
+            <h1 class="text">CONTACT US</h1>
+        </section>
+    </div>
+    <img id="us" src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg"
+        width="1520px" height="400px">
+
+        <footer id="form">
+            <h2 id="two">CONTACT US</h2>
+            NAME:<input type="text" placeholder="ENTER YOUR NAME">
+            EMAIL:<input type="email" placeholder="ENTER EMAIL">
+            PHONE NUMBER:<input type="text" placeholder="ENTER YOUR NUMBER">
+            MESSAGE:<textarea rowspan="3" colspan=4></textarea>
+            <button class="bton">SEND</button>
+        </footer>
+
+        <section class="form">
+            <div class="info">
+                <img class="msg"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmyNtfY-K4UsNxbsumJJFtLzsuZ9T0cSOT8D1HtLakk_PhkSO0yrN6kaDGQYZrOp-zie0&usqp=CAU"
+                    height=50px width="50px">
+                <h3>ABC ROAD , COLONY , XYZ BUILDING</h3>
+            </div>
+            <div class="info">
+                <img class="msg" src="https://icon-library.com/images/red-phone-icon-png/red-phone-icon-png-21.jpg"
+                    height=40px width="40px">
+                <h3 class="mail">+1 016423460</h3>
+            </div>
+            <div class="info">
+                <img class="msg"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHizh7YUJI15XRvgMOmEt7WX7bk9g4bPGc_fM0BH8b2Q&s"
+                    height=40px width="40px">
+                <h3 class="mail"> @anshi.com</h3>
+            </div> 
+        </section>
+
+</body>
+
+</html>
